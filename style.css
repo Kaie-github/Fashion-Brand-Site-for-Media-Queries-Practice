@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/* common */
+*{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body,
+h1,
+h2,
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 24px;
+}
+
+h2{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+.container{
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+.btn{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  width: 160px;
+  padding: 8px 0;
+  background: #004AAD;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+/* header */
+header .container{
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* hero */
+.hero{
+  background: #59BBFA;
+  text-align: center;
+  color: #fff;
+  padding: 32px 0;
+}
+
+.hero p{
+  margin-top: 16px;
+}
+
+.hero img{
+  margin: 32px 0;
+}
+
+.hero .btn{
+  margin: 0 auto;
+  margin: 32px auto 0;
+}
+
+
+/* features */
+.features h1{
+  text-align: center;
+  padding: 64px;
+}
+
+.features img{
+  width: 100%;
+}
+
+.features p{
+  margin-top: 16px;
+}
+
+.features section{
+  margin-bottom: 32px;
+}
+
+.features .pic{
+  padding: 32px;
+}
+
+
+/* voices */
+.voices{
+  background: #59BBFA;
+  padding-bottom: 64px;
+}
+
+.voices h1{
+  text-align: center;
+  padding: 64px;
+  color: #fff;
+}
+
+.voices .user{
+  background: #fff;
+  width: calc(100% - 32px);
+  margin: 0 auto 16px;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.voices .profile{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.voices section + section{
+  margin-bottom: 32px;
+}
+
+/* call-to-action */
+.call-to-action{
+  background: #59BBFA;
+  padding: 64px;
+  background-image: url(img/bg.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.call-to-action h1{
+  padding-bottom: 64px;
+  text-align: center;
+  color: #fff;
+}
+
+.call-to-action a{
+  margin: 0 auto;
+}
+
+
+/* footer */
+footer{
+  background-color: #004AAD;
+  padding: 64px;
+}
+
+footer p{
+  color: #eee;
+  text-align: center;
+}
+
+footer small{
+  font-size: 16px;
+}
+
+
+/* large-screen */
+@media(min-width: 600px){
+  /* common */
+  .container{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* .hero */
+   .hero .container{
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero h1{
+    padding-top: 0;
+  }
+
+  .hero .desc{
+    order: -1;
+    width: 100%;
+  }
+
+  /* .features */
+  .features section{
+    display: flex;
+    align-items: center;
+  }
+
+  .features section:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+
+  /* .voices */
+  .voices .container{
+    display: flex;
+    gap: 16px;
+  }
+}
+
